@@ -17,7 +17,7 @@ function Dashboard() {
   const [stats, setStats] = useState({ dashboard: {}, hospitalData: [] });
 
   useEffect(() => {
-    fetch('http://hpb.health.gov.lk/api/get-current-statistical')
+    fetch('https://hpb.health.gov.lk/api/get-current-statistical')
       .then(response => response.json())
       .then(response => {
         if (response.success === true) {
